@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PL" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="build/picklelauncher_debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="build" />
+				<Option object_output="build/objs/debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="build/objs/debug/libunzip.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="build/picklelauncher" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="build" />
+				<Option object_output="build/objs/release" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="build/objs/release/libunzip.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wshadow" />
+			<Add option="-Winit-self" />
+			<Add option="-Wredundant-decls" />
+			<Add option="-Wcast-align" />
+			<Add option="-Wundef" />
+			<Add option="-Wfloat-equal" />
+			<Add option="-Winline" />
+			<Add option="-Wunreachable-code" />
+			<Add option="-Wmissing-declarations" />
+			<Add option="-Wmissing-include-dirs" />
+			<Add option="-Wswitch-default" />
+			<Add option="-Weffc++" />
+			<Add option="-Wmain" />
+			<Add option="-pedantic-errors" />
+			<Add option="-pedantic" />
+			<Add option="-std=c++0x" />
+			<Add option="-Wfatal-errors" />
+			<Add option="-Wextra" />
+			<Add option="-Wall" />
+			<Add option="-DX86" />
+			<Add option="-DPL_UNZIP_DONTUSE" />
+			<Add directory="/usr/include/SDL" />
+		</Compiler>
+		<Linker>
+			<Add library="SDL" />
+			<Add library="SDL_image" />
+			<Add library="SDL_ttf" />
+		</Linker>
+		<Unit filename="src/cbase.cpp" />
+		<Unit filename="src/cbase.h" />
+		<Unit filename="src/cconfig.cpp" />
+		<Unit filename="src/cconfig.h" />
+		<Unit filename="src/cprofile.cpp" />
+		<Unit filename="src/cprofile.h" />
+		<Unit filename="src/cselector.cpp" />
+		<Unit filename="src/cselector.h" />
+		<Unit filename="src/csystem.cpp" />
+		<Unit filename="src/csystem.h" />
+		<Unit filename="src/czip.cpp" />
+		<Unit filename="src/czip.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/main.h" />
+		<Unit filename="src/version.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

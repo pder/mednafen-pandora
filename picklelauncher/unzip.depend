@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1262619084 source:/media/disk/Files/Projects/PL/src/unzip/ioapi.c
+	"ioapi.h"
+
+1288638476 /media/disk/Files/Projects/PL/src/unzip/ioapi.h
+	<stdio.h>
+	<stdlib.h>
+	"zlib.h"
+	<stdint.h>
+	"mz64conf.h"
+	"stdint.h"
+
+1289245790 source:/media/disk/Files/Projects/PL/src/unzip/unzip.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"zlib.h"
+	"unzip.h"
+	<stddef.h>
+	<string.h>
+	<stdlib.h>
+	<errno.h>
+	"crypt.h"
+
+1266227902 /media/disk/Files/Projects/PL/src/unzip/unzip.h
+	"zlib.h"
+	"ioapi.h"
+	"bzlib.h"
+
