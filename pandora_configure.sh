@@ -12,6 +12,17 @@
 # 'make install' you should define a '--prefix=' or you might get problems with
 # your normal system.
 
+# first run configure without setting up the cross compiler and make a copy of
+# the src/hw_cpu directory
+
+./configure && \
+make -C src/hw_cpu && \
+rm -rf src/hw_cpu-native && \
+cp -r src/hw_cpu src/hw_cpu-native && \
+make distclean && \
+cp src/hw_cpu-native/gen68k src/hw_cpu
+
+
 PNDSDK=$HOME/pandora-dev/arm-2010.09
 TARGET_SYS=arm-none-linux-gnueabi
 CROSSTOOL="$PNDSDK/bin/$TARGET_SYS"
