@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PXML xmlns="http://openpandora.org/namespaces/PXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PXML_schema.xsd">
+<application id="mednafen-pce">
+  <title lang="en_US">mednafen-pce</title>
+ 
+  <description lang="en_US">Mednafen PC Engine/Turbo Grafx 16 emulator</description>
+ 
+  <exec command=run.sh"/>
+ 
+  <icon src="mednafen-pce.png"/>
+ 
+  <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
+ 
+  <version major="0" minor="8" release="D.3" build="0"/>
+  <info name="mednafen readme" type="text/plain" src="readme.txt"/>
+ 
+  <categories>
+    <category name="Game">
+    <subcategory name="Emulator"/>
+    </category>
+  </categories>
+</application>
+</PXML>

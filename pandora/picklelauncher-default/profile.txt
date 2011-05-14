@@ -1,0 +1,17 @@
+# Global Settings
+targetapp=mednafen-PC-Engine
+filepath=/media/
+
+# Command Settings
+<Set CPU Speed>
+cmdpath=/usr/pandora/scripts/
+cmdarg=./empty.sh;4;200 Mhz;200;300 Mhz;300;400 Mhz;400;500 Mhz;500;600 Mhz;600;650 Mhz;650;700 Mhz;700;750 Mhz;750;800 Mhz;800
+
+# Extension Settings
+[pce]
+exepath=./mednafen-pce.sh
+extarg=;0;%na%;%filename%
+
+[cue]
+exepath=./mednafen-pce.sh
+extarg=;0;%na%;%filename%
