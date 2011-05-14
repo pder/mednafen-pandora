@@ -7,7 +7,7 @@
 # from inside the dir where you normally run a commandline like the following:
 #    ./configure --prefix=$HOME/pandora-dev/testcase --disable-strict-compilation
 # run this instead to have everything setup for cross compilation:
-#    /home/pder/pandora-dev/sdk_utils/pandora_configure.sh --prefix=$HOME/pandora-dev/testcase --disable-strict-compilation
+#    $HOME/pandora-dev/sdk_utils/pandora_configure.sh --prefix=$HOME/pandora-dev/testcase --disable-strict-compilation
 # afterwards call 'make' and 'make install', as you are used to. For
 # 'make install' you should define a '--prefix=' or you might get problems with
 # your normal system.
@@ -24,8 +24,8 @@ PKG_CONFIG=$PNDSDK/bin/arm-none-linux-gnueabi-pkg-config \
 CPATH="$PNDSDK/usr/include:$CPATH" \
 CFLAGS="-DPANDORA -D_ARM_ASSEM_ -O3 -pipe -march=armv7-a -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp -ftree-vectorize -ffast-math -fsingle-precision-constant" \
 CPPFLAGS="-DPANDORA -D_ARM_ASSEM_ -O3 -pipe -march=armv7-a -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp -ftree-vectorize -ffast-math -fsingle-precision-constant" \
-CXXFLAGS="-I$PNDSDK/usr/include -I/home/pder/projects/pandora/mednafen-0.9.16-wip/libcdio/usr/include" \
-LDFLAGS="-L$PNDSDK/usr/lib -Wl,-rpath,$PNDSDK/usr/lib -L/home/pder/projects/pandora/mednafen-0.9.16-wip/libcdio/usr/lib" \
+CXXFLAGS="-I$PNDSDK/usr/include -Ilibcdio/usr/include" \
+LDFLAGS="-L$PNDSDK/usr/lib -Wl,-rpath,$PNDSDK/usr/lib -L`pwd`libcdio/usr/lib" \
 CXX=$CROSSTOOL-g++ \
 CC=$CROSSTOOL-gcc \
 AR=$CROSSTOOL-ar \
