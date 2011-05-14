@@ -1,0 +1,13 @@
+diff --git a/src/hw_cpu/Makefile b/src/hw_cpu/Makefile
+index 42730de..02f77d4 100644
+--- a/src/hw_cpu/Makefile
++++ b/src/hw_cpu/Makefile
+@@ -461,7 +461,7 @@ c68k/gen68k-gen68k.$(OBJEXT): c68k/$(am__dirstamp) \
+ 	c68k/$(DEPDIR)/$(am__dirstamp)
+ gen68k$(EXEEXT): $(gen68k_OBJECTS) $(gen68k_DEPENDENCIES) 
+ 	@rm -f gen68k$(EXEEXT)
+-	$(AM_V_CCLD)$(gen68k_LINK) $(gen68k_OBJECTS) $(gen68k_LDADD) $(LIBS)
++	cp ../hw_cpu-native/gen68k .
+ 
+ mostlyclean-compile:
+ 	-rm -f *.$(OBJEXT)
