@@ -19,10 +19,7 @@
 make -C src/hw_cpu && \
 rm -rf src/hw_cpu-native && \
 cp -r src/hw_cpu src/hw_cpu-native && \
-make distclean && \
-cp src/hw_cpu-native/gen68k src/hw_cpu && \
-rm -rf src/hw_cpu-native
-
+make distclean
 
 PNDSDK=$HOME/pandora-dev/arm-2010.09
 TARGET_SYS=arm-none-linux-gnueabi
