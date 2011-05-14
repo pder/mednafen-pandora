@@ -24,8 +24,8 @@ PKG_CONFIG=$PNDSDK/bin/arm-none-linux-gnueabi-pkg-config \
 CPATH="$PNDSDK/usr/include:$CPATH" \
 CFLAGS="-DPANDORA -D_ARM_ASSEM_ -O3 -pipe -march=armv7-a -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp -ftree-vectorize -ffast-math -fsingle-precision-constant" \
 CPPFLAGS="-DPANDORA -D_ARM_ASSEM_ -O3 -pipe -march=armv7-a -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp -ftree-vectorize -ffast-math -fsingle-precision-constant" \
-CXXFLAGS="-I$PNDSDK/usr/include -Ilibcdio/usr/include" \
-LDFLAGS="-L$PNDSDK/usr/lib -Wl,-rpath,$PNDSDK/usr/lib -L`pwd`libcdio/usr/lib" \
+CXXFLAGS="-I$PNDSDK/usr/include -I`pwd`/libcdio/usr/include" \
+LDFLAGS="-L$PNDSDK/usr/lib -Wl,-rpath,$PNDSDK/usr/lib -L`pwd`/libcdio/usr/lib" \
 CXX=$CROSSTOOL-g++ \
 CC=$CROSSTOOL-gcc \
 AR=$CROSSTOOL-ar \
