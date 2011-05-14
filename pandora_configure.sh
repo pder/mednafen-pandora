@@ -58,7 +58,8 @@ HOST_CXX=g++ \
             --enable-wswan=no \
             $*
 
-patch -p1 < patches/hw_cpu-makefile.patch
+patch -p1 < patches/src-hw_cpu-makefile.patch
+patch -p1 < patches/src-makefile.patch
 
 if [ "$?" -eq "0" ];
 then
