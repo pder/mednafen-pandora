@@ -48,12 +48,12 @@ HOST_CXX=g++ \
             --enable-gba=yes \
             --enable-lynx=no \
             --enable-md=no \
-            --enable-nes=no \
-            --enable-ngp=no \
-            --enable-pce=yes \
+            --enable-nes=yes \
+            --enable-ngp=yes \
+            --enable-pce=no \
             --enable-pce-fast=yes \
             --enable-pcfx=no \
-            --enable-sms=no \
+            --enable-sms=yes \
             --enable-snes=no \
             --enable-wswan=no \
             $*
