@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PXML xmlns="http://openpandora.org/namespaces/PXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PXML_schema.xsd">
-<application id="mednafen-pce">
-  <title lang="en_US">mednafen-pce</title>
+<application id="mednafen">
+  <title lang="en_US">mednafen</title>
  
-  <description lang="en_US">Mednafen PC Engine/Turbo Grafx 16 emulator</description>
+  <description lang="en_US">Mednafen multi system emulator</description>
  
   <exec command=run.sh"/>
  
-  <icon src="mednafen-pce.png"/>
+  <icon src="mednafen.png"/>
  
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
  

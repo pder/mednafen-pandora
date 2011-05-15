@@ -15,9 +15,9 @@ pnd: src/mednafen
 	cp libSDL/libSDL-1.2.so.0 tmp/lib
 	cp -r pandora/* tmp
 
-	$(PND_MAKE) -p mednafen-pce_$(VER).pnd -d tmp -x pandora/PXML.xml -i pandora/icon.png -c
+	$(PND_MAKE) -p mednafen_$(VER).pnd -d tmp -x pandora/PXML.xml -i pandora/icon.png -c
 source: 
 	make clean
 	rm -f *.pnd
 	rm -rf tmp
-	cd .. && tar --exclude-vcs -cjvf mednafen-pce_$(VER)-src.tar.bz2 mednafen-0.9.16-wip
+	cd .. && tar --exclude-vcs -cjvf mednafen_$(VER)-src.tar.bz2 mednafen-0.9.16-wip
