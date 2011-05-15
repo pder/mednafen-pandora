@@ -9,7 +9,7 @@ PND_MAKE=$(HOME)/pandora-dev/sdk_utils/pnd_make.sh
 pnd: src/mednafen
 	rm -rf tmp
 	mkdir -p tmp/lib
-	cp src/.lib/mednafen tmp
+	cp src/.libs/mednafen tmp
 	$(STRIP) tmp/mednafen
 	cp libcdio/usr/lib/libcdio.so.10.0.0 tmp/lib/libcdio.so.10
 	cp libSDL/libSDL-1.2.so.0 tmp/lib
