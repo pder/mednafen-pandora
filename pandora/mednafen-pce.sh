@@ -10,4 +10,4 @@ if [ ! -d .mednafen ] ; then
     cp -r mednafen-default .mednafen
 fi
 
-./mednafen -force_module pce_fast "$FILE"
+./mednafen -force_module pce_fast "$1"
