@@ -97,4 +97,32 @@
     </category>
   </categories>
 </application>
+
+<application id="mednafen-vb" appdata="mednafen">
+  <title lang="en_US">mednafen-vb</title>
+  <description lang="en_US">Mednafen Virtual Boy Launcher</description>
+  <exec command="mednafen-vb.sh"/>
+  <icon src="mednafen.png"/>
+  <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
+  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <categories>
+    <category name="Game">
+    <subcategory name="Emulator"/>
+    </category>
+  </categories>
+</application>
+
+<application id="mednafen-wswan" appdata="mednafen">
+  <title lang="en_US">mednafen-wswan</title>
+  <description lang="en_US">Mednafen WonderSwan Launcher</description>
+  <exec command="mednafen-wswan.sh"/>
+  <icon src="mednafen.png"/>
+  <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
+  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <categories>
+    <category name="Game">
+    <subcategory name="Emulator"/>
+    </category>
+  </categories>
+</application>
 </PXML>
