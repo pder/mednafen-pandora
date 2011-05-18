@@ -28,6 +28,20 @@
   </categories>
 </application>
 
+<application id="mednafen-lynx" appdata="mednafen">
+  <title lang="en_US">mednafen-lynx</title>
+  <description lang="en_US">Mednafen Atari Lynx Launcher</description>
+  <exec command="mednafen-lynx.sh"/>
+  <icon src="mednafen.png"/>
+  <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
+  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <categories>
+    <category name="Game">
+    <subcategory name="Emulator"/>
+    </category>
+  </categories>
+</application>
+
 <application id="mednafen-nes" appdata="mednafen">
   <title lang="en_US">mednafen-nes</title>
   <description lang="en_US">Mednafen NES Launcher</description>
