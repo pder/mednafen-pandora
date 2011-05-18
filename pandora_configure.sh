@@ -55,7 +55,8 @@ HOST_CXX=g++ \
             --enable-pcfx=no \
             --enable-sms=yes \
             --enable-snes=no \
-            --enable-wswan=no \
+            --enable-vb=yes \
+            --enable-wswan=yes \
             $*
 
 patch -p1 < patches/src-hw_cpu-makefile.patch
