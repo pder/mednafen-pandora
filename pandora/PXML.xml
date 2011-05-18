@@ -1,19 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PXML xmlns="http://openpandora.org/namespaces/PXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PXML_schema.xsd">
-<application id="mednafen">
-  <title lang="en_US">mednafen</title>
- 
-  <description lang="en_US">Mednafen multi system emulator</description>
- 
-  <exec command=run.sh"/>
- 
+<application id="mednafen-gba">
+  <title lang="en_US">mednafen-gba</title>
+  <description lang="en_US">Mednafen: Game Boy Advance Launcher</description>
+  <exec command="mednafen-gba.sh"/>
   <icon src="mednafen.png"/>
- 
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
- 
-  <version major="0" minor="8" release="D.3" build="0"/>
+  <version major="0" minor="9" release="17.1-wip" build="0"/>
   <info name="mednafen readme" type="text/plain" src="readme.txt"/>
- 
+  <categories>
+    <category name="Game">
+    <subcategory name="Emulator"/>
+    </category>
+  </categories>
+</application>
+
+<application id="mednafen-gb">
+  <title lang="en_US">mednafen-gb</title>
+  <description lang="en_US">Mednafen Game Boy / Game Boy Color Launcher</description>
+  <exec command="mednafen-gb.sh"/>
+  <icon src="mednafen.png"/>
+  <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
+  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <info name="mednafen readme" type="text/plain" src="readme.txt"/>
+  <categories>
+    <category name="Game">
+    <subcategory name="Emulator"/>
+    </category>
+  </categories>
+</application>
+
+<application id="mednafen-nes">
+  <title lang="en_US">mednafen-nes</title>
+  <description lang="en_US">Mednafen NES Launcher</description>
+  <exec command="mednafen-nes.sh"/>
+  <icon src="mednafen.png"/>
+  <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
+  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <info name="mednafen readme" type="text/plain" src="readme.txt"/>
+  <categories>
+    <category name="Game">
+    <subcategory name="Emulator"/>
+    </category>
+  </categories>
+</application>
+
+<application id="mednafen-ngp">
+  <title lang="en_US">mednafen-ngp</title>
+  <description lang="en_US">Mednafen Neo Geo Pocket Launcher</description>
+  <exec command="mednafen-ngp.sh"/>
+  <icon src="mednafen.png"/>
+  <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
+  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <info name="mednafen readme" type="text/plain" src="readme.txt"/>
+  <categories>
+    <category name="Game">
+    <subcategory name="Emulator"/>
+    </category>
+  </categories>
+</application>
+
+<application id="mednafen-pce">
+  <title lang="en_US">mednafen-pce</title>
+  <description lang="en_US">Mednafen PC Engine/Turbografx-16 Launcher</description>
+  <exec command="mednafen-pce.sh"/>
+  <icon src="mednafen.png"/>
+  <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
+  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <info name="mednafen readme" type="text/plain" src="readme.txt"/>
+  <categories>
+    <category name="Game">
+    <subcategory name="Emulator"/>
+    </category>
+  </categories>
+</application>
+
+<application id="mednafen-sms">
+  <title lang="en_US">mednafen-sms</title>
+  <description lang="en_US">Mednafen Sega Master System / Game Gear Launcher</description>
+  <exec command="mednafen-sms.sh"/>
+  <icon src="mednafen.png"/>
+  <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
+  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <info name="mednafen readme" type="text/plain" src="readme.txt"/>
   <categories>
     <category name="Game">
     <subcategory name="Emulator"/>
