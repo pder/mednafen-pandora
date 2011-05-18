@@ -1,13 +1,9 @@
 #!/bin/sh
 
-export LD_LIBRARY_PATH=`pwd`/lib
-export SDL_VIDEODRIVER=omapdss
+source ./mednafen-common.sh
+
 export SDL_OMAP_LAYER_SIZE=480x456
-export SDL_OMAP_VSYNC=1
-export MEDNAFEN_HOME=`pwd`/.mednafen
 
-if [ ! -d .mednafen ] ; then
-    cp -r mednafen-default .mednafen
-fi
+file=`select_rom "lastdir-ngp.txt" "Neo Geo Pocket"`
 
-./mednafen "$1"
+./mednafen "$file"

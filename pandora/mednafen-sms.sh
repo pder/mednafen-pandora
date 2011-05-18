@@ -1,13 +1,9 @@
 #!/bin/sh
 
-export LD_LIBRARY_PATH=`pwd`/lib
-export SDL_VIDEODRIVER=omapdss
+source ./mednafen-common.sh
+
 export SDL_OMAP_LAYER_SIZE=512x480
-export SDL_OMAP_VSYNC=1
-export MEDNAFEN_HOME=`pwd`/.mednafen
 
-if [ ! -d .mednafen ] ; then
-    cp -r mednafen-default .mednafen
-fi
+file=`select_rom "lastdir-sms.txt" "Sega Master System / Game Gear"`
 
-./mednafen "$1"
+./mednafen "$file"
