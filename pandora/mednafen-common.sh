@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 export LD_LIBRARY_PATH=`pwd`/lib
 export SDL_VIDEODRIVER=omapdss

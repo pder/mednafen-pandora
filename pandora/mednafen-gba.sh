@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 source ./mednafen-common.sh
 

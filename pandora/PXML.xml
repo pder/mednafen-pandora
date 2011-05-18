@@ -15,7 +15,7 @@
   </categories>
 </application>
 
-<application id="mednafen-gb">
+<application id="mednafen-gb" appdata="mednafen">
   <title lang="en_US">mednafen-gb</title>
   <description lang="en_US">Mednafen Game Boy / Game Boy Color Launcher</description>
   <exec command="mednafen-gb.sh"/>
@@ -30,7 +30,7 @@
   </categories>
 </application>
 
-<application id="mednafen-nes">
+<application id="mednafen-nes" appdata="mednafen">
   <title lang="en_US">mednafen-nes</title>
   <description lang="en_US">Mednafen NES Launcher</description>
   <exec command="mednafen-nes.sh"/>
@@ -45,7 +45,7 @@
   </categories>
 </application>
 
-<application id="mednafen-ngp">
+<application id="mednafen-ngp" appdata="mednafen">
   <title lang="en_US">mednafen-ngp</title>
   <description lang="en_US">Mednafen Neo Geo Pocket Launcher</description>
   <exec command="mednafen-ngp.sh"/>
@@ -60,7 +60,7 @@
   </categories>
 </application>
 
-<application id="mednafen-pce">
+<application id="mednafen-pce" appdata="mednafen">
   <title lang="en_US">mednafen-pce</title>
   <description lang="en_US">Mednafen PC Engine/Turbografx-16 Launcher</description>
   <exec command="mednafen-pce.sh"/>
@@ -75,7 +75,7 @@
   </categories>
 </application>
 
-<application id="mednafen-sms">
+<application id="mednafen-sms" appdata="mednafen">
   <title lang="en_US">mednafen-sms</title>
   <description lang="en_US">Mednafen Sega Master System / Game Gear Launcher</description>
   <exec command="mednafen-sms.sh"/>
