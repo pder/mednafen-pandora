@@ -2,11 +2,11 @@
 
 source ./mednafen-common.sh
 
-export SDL_OMAP_LAYER_SIZE=512x480
+export SDL_OMAP_LAYER_SIZE=480x432
 
 while [ 1 ]
 do
-    file=`select_rom "lastdir-sms.txt" "Sega Master System"`
+    file=`select_rom "lastdir-gg.txt" "Game Gear"`
     if [ "$file" == "" ]; then
         exit
     fi

@@ -29,6 +29,20 @@
   </categories>
 </application>
 
+<application id="mednafen-gg" appdata="mednafen">
+  <title lang="en_US">mednafen-gg</title>
+  <description lang="en_US">Mednafen Game Gear Launcher</description>
+  <exec command="mednafen-gg.sh"/>
+  <icon src="mednafen.png"/>
+  <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
+  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <categories>
+    <category name="Game">
+    <subcategory name="Emulator"/>
+    </category>
+  </categories>
+</application>
+
 <application id="mednafen-lynx" appdata="mednafen">
   <title lang="en_US">mednafen-lynx</title>
   <description lang="en_US">Mednafen Atari Lynx Launcher</description>
@@ -87,7 +101,7 @@
 
 <application id="mednafen-sms" appdata="mednafen">
   <title lang="en_US">mednafen-sms</title>
-  <description lang="en_US">Mednafen Sega Master System / Game Gear Launcher</description>
+  <description lang="en_US">Mednafen Sega Master System Launcher</description>
   <exec command="mednafen-sms.sh"/>
   <icon src="mednafen.png"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
