@@ -7,6 +7,7 @@
   <icon src="mednafen.png"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
   <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <info name="Mednafen Documentation" type="text/html" src="mednafen.html"/>
   <categories>
     <category name="Game">
     <subcategory name="Emulator"/>

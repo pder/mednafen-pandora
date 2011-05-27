@@ -8,5 +8,8 @@ pnd: src/mednafen
 	cp libcdio/usr/lib/libcdio.so.10.0.0 tmp/lib/libcdio.so.10
 	cp libSDL/libSDL-1.2.so.0 tmp/lib
 	cp -r pandora/* tmp
+	cp Documentation/mednafen.html tmp
+	cp Documentation/mednafen.css tmp
+	cp Documentation/mednafen.png tmp
 
 	$(PND_MAKE) -p mednafen_$(VER).pnd -d tmp -x pandora/PXML.xml -i pandora/icon.png -c
