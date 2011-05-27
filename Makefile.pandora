@@ -1,4 +1,4 @@
-VER=r3
+VER=r1
 PND_MAKE=$(HOME)/pandora-dev/sdk_utils/pnd_make.sh
 pnd: src/mednafen
 	rm -rf tmp
