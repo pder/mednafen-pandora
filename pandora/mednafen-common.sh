@@ -15,7 +15,7 @@ function select_rom()
     lastdir=`cat "$here/$1"`
     cd "$lastdir" && file="`zenity --file-selection --title="Select a $2 rom"`"
     lastdir=`dirname "$file"`
-    if [ "$lastdir" != "" ] ; then
+    if [ "$file" != "" ] ; then
         echo $lastdir > "$here/$1"
     fi
     cd "$here"
