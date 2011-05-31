@@ -11,5 +11,4 @@ pnd: src/mednafen
 	cp Documentation/mednafen.html tmp
 	cp Documentation/mednafen.css tmp
 	cp Documentation/mednafen.png tmp
-
-	$(PND_MAKE) -p mednafen_$(VER).pnd -d tmp -x pandora/PXML.xml -i pandora/icon.png -c
+	$(PND_MAKE) -p mednafen_$(VER).pnd -d tmp -x pandora/PXML.xml -i pandora/icon_mednafen.png -c
