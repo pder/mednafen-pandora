@@ -1201,6 +1201,13 @@ void GT_ToggleFS(void)
 {
  SDL_mutexP(VTMutex);
  NeedVideoChange = 1;
+ if (!strcmp(MDFNGameInfo->shortname, "nes")) {
+     MDFNI_SetSettingB("nes.stretch", !MDFN_GetSettingB("nes.stretch"));
+ } else if (!strcmp(MDFNGameInfo->shortname, "pce_fast")) {
+     MDFNI_SetSettingB("pce_fast.stretch", !MDFN_GetSettingB("pce_fast.stretch"));
+ } else if (!strcmp(MDFNGameInfo->shortname, "sms")) {
+     MDFNI_SetSettingB("sms.stretch", !MDFN_GetSettingB("sms.stretch"));
+ }
  SDL_mutexV(VTMutex);
 
  if(SDL_ThreadID() != MainThreadID)
@@ -1628,7 +1635,7 @@ int main(int argc, char *argv[])
          VTBuffer[1] = new MDFN_Surface(NULL, CurGame->fb_width, CurGame->fb_height, pitch32, nf);
          VTLineWidths[0] = (MDFN_Rect *)calloc(CurGame->fb_height, sizeof(MDFN_Rect));
          VTLineWidths[1] = (MDFN_Rect *)calloc(CurGame->fb_height, sizeof(MDFN_Rect));
-         NeedVideoChange = -1;
+         NeedVideoChange = 1;
          FPS_Init();
 
          #ifdef WANT_DEBUGGER
@@ -1664,31 +1671,50 @@ int main(int argc, char *argv[])
 
          if(NeedVideoChange)
          {
-          KillVideo();
+             KillVideo();
 
-	  for(int i = 0; i < 2; i++)
-	   ((MDFN_Surface *)VTBuffer[i])->Fill(0, 0, 0, 0);
+             for(int i = 0; i < 2; i++)
+                 ((MDFN_Surface *)VTBuffer[i])->Fill(0, 0, 0, 0);
 
-          if(NeedVideoChange == -1)
-          {
-           if(!InitVideo(CurGame))
-           {
-            NeedExitNow = 1;
-            break;
-           }
-          }
-          else
-          {
-           MDFNI_SetSettingB("video.fs", !MDFN_GetSettingB("video.fs"));
-
-           if(!InitVideo(CurGame))
-           {
-            MDFNI_SetSettingB("video.fs", !MDFN_GetSettingB("video.fs"));
-            InitVideo(CurGame);
-           }
-          }
-          NeedVideoChange = 0;
-         }
+             if(NeedVideoChange == -1)
+             {
+                 if(!InitVideo(CurGame))
+                 {
+                     NeedExitNow = 1;
+                     break;
+                 }
+             }
+             else
+             {
+                 if (!strcmp(MDFNGameInfo->shortname, "nes")) {
+                     bool stretch = MDFN_GetSettingB("nes.stretch");
+                     if (stretch) {
+                         setenv("SDL_OMAP_LAYER_SIZE", "592x448", 1);
+                     }
+                     else {
+                         setenv("SDL_OMAP_LAYER_SIZE", "512x448", 1);
+                     }
+                 } else if (!strcmp(MDFNGameInfo->shortname, "pce_fast")) {
+                     bool stretch = MDFN_GetSettingB("pce_fast.stretch");
+                     if (stretch) {
+                         setenv("SDL_OMAP_LAYER_SIZE", "800x464", 1);
+                     }
+                     else {
+                         setenv("SDL_OMAP_LAYER_SIZE", "684x464", 1);
+                     }
+                 } else if (!strcmp(MDFNGameInfo->shortname, "sms")) {
+                     bool stretch = MDFN_GetSettingB("sms.stretch");
+                     if (stretch) {
+                         setenv("SDL_OMAP_LAYER_SIZE", "640x480", 1);
+                     }
+                     else {
+                         setenv("SDL_OMAP_LAYER_SIZE", "512x480", 1);
+                     }
+                 }
+                 InitVideo(CurGame);
+             }
+             NeedVideoChange = 0;
+        }
 
          if(VTReady)
          {
