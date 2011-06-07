@@ -61,6 +61,7 @@ HOST_CXX=g++ \
 
 patch -p1 < patches/src-hw_cpu-makefile.patch
 patch -p1 < patches/src-makefile.patch
+cat Makefile.pandora >> Makefile
 
 if [ "$?" -eq "0" ];
 then

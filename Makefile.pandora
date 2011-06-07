@@ -1,4 +1,4 @@
-VER=r1
+VER ?= $(shell git describe)
 PND_MAKE=$(HOME)/pandora-dev/sdk_utils/pnd_make.sh
 pnd: src/mednafen
 	rm -rf tmp
@@ -11,4 +11,5 @@ pnd: src/mednafen
 	cp Documentation/mednafen.html tmp
 	cp Documentation/mednafen.css tmp
 	cp Documentation/mednafen.png tmp
-	$(PND_MAKE) -p mednafen_$(VER).pnd -d tmp -x pandora/PXML.xml -i pandora/icon_mednafen.png -c
+	sed -i -e 's/%PR%/$(VER)/g' tmp/PXML.xml 
+	$(PND_MAKE) -p mednafen_$(VER).pnd -d tmp -x tmp/PXML.xml -i pandora/icon_mednafen.png -c
