@@ -103,6 +103,7 @@
 
 <application id="mednafen-nes" appdata="mednafen">
   <exec command="mednafen-nes.sh"/>
+  <clockspeed frequency="725"/>
   <version major="0" minor="9" release="17" build="0"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
   <titles>
@@ -149,6 +150,7 @@
 
 <application id="mednafen-pce" appdata="mednafen">
   <exec command="mednafen-pce.sh"/>
+  <clockspeed frequency="725"/>
   <version major="0" minor="9" release="17" build="0"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
   <titles>
