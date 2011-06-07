@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PXML xmlns="http://openpandora.org/namespaces/PXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PXML_schema.xsd">
+<package id="package.mednafen-pandora.%PR%">
+  <titles>
+    <title lang="en_US">Mednafen %PR%</title>
+  </titles>
+  <version major="0" minor="9" release="17" build="%PR%"/>
+  <author name="mednafen team" website="http://mednafen.sourceforge.net"/>
+</package>
+
 <application id="mednafen-gba" appdata="mednafen">
-  <title lang="en_US">mednafen-gba</title>
-  <description lang="en_US">Mednafen Game Boy Advance Launcher</description>
   <exec command="mednafen-gba.sh"/>
-  <icon src="icon_mednafen.png"/>
+  <version major="0" minor="9" release="17" build="0"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
-  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <titles>
+      <title lang="en_US">mednafen-gba</title>
+  </titles>
+  <title lang="en_US">mednafen-gba</title>
+  <descriptions>
+      <description lang="en_US">Mednafen Game Boy Advance Launcher</description>
+  </descriptions>
+  <description lang="en_US">Mednafen Game Boy Advance Launcher</description>
+  <icon src="icon_mednafen.png"/>
+  <licenses>
+      <license name="GPLv2+" url="http://www.gnu.org/licenses/gpl-2.0.html" sourcecodeurl="git://github.com/pder/mednafen-pandora.git"/>
+  </licenses>
   <info name="Mednafen Documentation" type="text/html" src="mednafen.html"/>
   <categories>
     <category name="Game">
@@ -16,12 +33,21 @@
 </application>
 
 <application id="mednafen-gb" appdata="mednafen">
-  <title lang="en_US">mednafen-gb</title>
-  <description lang="en_US">Mednafen Game Boy / Game Boy Color Launcher</description>
   <exec command="mednafen-gb.sh"/>
-  <icon src="icon_mednafen.png"/>
+  <version major="0" minor="9" release="17" build="0"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
-  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <titles>
+      <title lang="en_US">mednafen-gb</title>
+  </titles>
+  <title lang="en_US">mednafen-gb</title>
+  <descriptions>
+      <description lang="en_US">Mednafen Game Boy / Game Boy Color Launcher</description>
+  </descriptions>
+  <description lang="en_US">Mednafen Game Boy / Game Boy Color Launcher</description>
+  <icon src="icon_mednafen.png"/>
+  <licenses>
+      <license name="GPLv2+" url="http://www.gnu.org/licenses/gpl-2.0.html" sourcecodeurl="git://github.com/pder/mednafen-pandora.git"/>
+  </licenses>
   <categories>
     <category name="Game">
     <subcategory name="Emulator"/>
@@ -30,12 +56,21 @@
 </application>
 
 <application id="mednafen-gg" appdata="mednafen">
-  <title lang="en_US">mednafen-gg</title>
-  <description lang="en_US">Mednafen Game Gear Launcher</description>
   <exec command="mednafen-gg.sh"/>
-  <icon src="icon_mednafen.png"/>
+  <version major="0" minor="9" release="17" build="0"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
-  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <titles>
+      <title lang="en_US">mednafen-gg</title>
+  </titles>
+  <title lang="en_US">mednafen-gg</title>
+  <descriptions>
+      <description lang="en_US">Mednafen Game Gear Launcher</description>
+  </descriptions>
+  <description lang="en_US">Mednafen Game Gear Launcher</description>
+  <icon src="icon_mednafen.png"/>
+  <licenses>
+      <license name="GPLv2+" url="http://www.gnu.org/licenses/gpl-2.0.html" sourcecodeurl="git://github.com/pder/mednafen-pandora.git"/>
+  </licenses>
   <categories>
     <category name="Game">
     <subcategory name="Emulator"/>
@@ -44,12 +79,21 @@
 </application>
 
 <application id="mednafen-lynx" appdata="mednafen">
-  <title lang="en_US">mednafen-lynx</title>
-  <description lang="en_US">Mednafen Atari Lynx Launcher</description>
   <exec command="mednafen-lynx.sh"/>
-  <icon src="icon_mednafen.png"/>
+  <version major="0" minor="9" release="17" build="0"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
-  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <titles>
+      <title lang="en_US">mednafen-lynx</title>
+  </titles>
+  <title lang="en_US">mednafen-lynx</title>
+  <descriptions>
+      <description lang="en_US">Mednafen Atari Lynx Launcher</description>
+  </descriptions>
+  <description lang="en_US">Mednafen Atari Lynx Launcher</description>
+  <icon src="icon_mednafen.png"/>
+  <licenses>
+      <license name="GPLv2+" url="http://www.gnu.org/licenses/gpl-2.0.html" sourcecodeurl="git://github.com/pder/mednafen-pandora.git"/>
+  </licenses>
   <categories>
     <category name="Game">
     <subcategory name="Emulator"/>
@@ -58,12 +102,21 @@
 </application>
 
 <application id="mednafen-nes" appdata="mednafen">
-  <title lang="en_US">mednafen-nes</title>
-  <description lang="en_US">Mednafen NES Launcher</description>
   <exec command="mednafen-nes.sh"/>
-  <icon src="icon_mednafen.png"/>
+  <version major="0" minor="9" release="17" build="0"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
-  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <titles>
+      <title lang="en_US">mednafen-nes</title>
+  </titles>
+  <title lang="en_US">mednafen-nes</title>
+  <descriptions>
+      <description lang="en_US">Mednafen NES Launcher</description>
+  </descriptions>
+  <description lang="en_US">Mednafen NES Launcher</description>
+  <icon src="icon_mednafen.png"/>
+  <licenses>
+      <license name="GPLv2+" url="http://www.gnu.org/licenses/gpl-2.0.html" sourcecodeurl="git://github.com/pder/mednafen-pandora.git"/>
+  </licenses>
   <categories>
     <category name="Game">
     <subcategory name="Emulator"/>
@@ -72,12 +125,21 @@
 </application>
 
 <application id="mednafen-ngp" appdata="mednafen">
-  <title lang="en_US">mednafen-ngp</title>
-  <description lang="en_US">Mednafen Neo Geo Pocket Launcher</description>
   <exec command="mednafen-ngp.sh"/>
-  <icon src="icon_mednafen.png"/>
+  <version major="0" minor="9" release="17" build="0"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
-  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <titles>
+      <title lang="en_US">mednafen-ngp</title>
+  </titles>
+  <title lang="en_US">mednafen-ngp</title>
+  <descriptions>
+      <description lang="en_US">Mednafen Neo Geo Pocket Launcher</description>
+  </descriptions>
+  <description lang="en_US">Mednafen Neo Geo Pocket Launcher</description>
+  <icon src="icon_mednafen.png"/>
+  <licenses>
+      <license name="GPLv2+" url="http://www.gnu.org/licenses/gpl-2.0.html" sourcecodeurl="git://github.com/pder/mednafen-pandora.git"/>
+  </licenses>
   <categories>
     <category name="Game">
     <subcategory name="Emulator"/>
@@ -86,12 +148,21 @@
 </application>
 
 <application id="mednafen-pce" appdata="mednafen">
-  <title lang="en_US">mednafen-pce</title>
-  <description lang="en_US">Mednafen PC Engine/Turbografx-16 Launcher</description>
   <exec command="mednafen-pce.sh"/>
-  <icon src="icon_mednafen.png"/>
+  <version major="0" minor="9" release="17" build="0"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
-  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <titles>
+      <title lang="en_US">mednafen-pce</title>
+  </titles>
+  <title lang="en_US">mednafen-pce</title>
+  <descriptions>
+      <description lang="en_US">Mednafen PC Engine/Turbografx-16 Launcher</description>
+  </descriptions>
+  <description lang="en_US">Mednafen PC Engine/Turbografx-16 Launcher</description>
+  <icon src="icon_mednafen.png"/>
+  <licenses>
+      <license name="GPLv2+" url="http://www.gnu.org/licenses/gpl-2.0.html" sourcecodeurl="git://github.com/pder/mednafen-pandora.git"/>
+  </licenses>
   <categories>
     <category name="Game">
     <subcategory name="Emulator"/>
@@ -100,12 +171,21 @@
 </application>
 
 <application id="mednafen-sms" appdata="mednafen">
-  <title lang="en_US">mednafen-sms</title>
-  <description lang="en_US">Mednafen Sega Master System Launcher</description>
   <exec command="mednafen-sms.sh"/>
-  <icon src="icon_mednafen.png"/>
+  <version major="0" minor="9" release="17" build="0"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
-  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <titles>
+      <title lang="en_US">mednafen-sms</title>
+  </titles>
+  <title lang="en_US">mednafen-sms</title>
+  <descriptions>
+      <description lang="en_US">Mednafen Sega Master System Launcher</description>
+  </descriptions>
+  <description lang="en_US">Mednafen Sega Master System Launcher</description>
+  <icon src="icon_mednafen.png"/>
+  <licenses>
+      <license name="GPLv2+" url="http://www.gnu.org/licenses/gpl-2.0.html" sourcecodeurl="git://github.com/pder/mednafen-pandora.git"/>
+  </licenses>
   <categories>
     <category name="Game">
     <subcategory name="Emulator"/>
@@ -114,12 +194,21 @@
 </application>
 
 <application id="mednafen-vb" appdata="mednafen">
-  <title lang="en_US">mednafen-vb</title>
-  <description lang="en_US">Mednafen Virtual Boy Launcher</description>
   <exec command="mednafen-vb.sh"/>
-  <icon src="icon_mednafen.png"/>
+  <version major="0" minor="9" release="17" build="0"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
-  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <titles>
+      <title lang="en_US">mednafen-vb</title>
+  </titles>
+  <title lang="en_US">mednafen-vb</title>
+  <descriptions>
+      <description lang="en_US">Mednafen Virtual Boy Launcher</description>
+  </descriptions>
+  <description lang="en_US">Mednafen Virtual Boy Launcher</description>
+  <icon src="icon_mednafen.png"/>
+  <licenses>
+      <license name="GPLv2+" url="http://www.gnu.org/licenses/gpl-2.0.html" sourcecodeurl="git://github.com/pder/mednafen-pandora.git"/>
+  </licenses>
   <categories>
     <category name="Game">
     <subcategory name="Emulator"/>
@@ -128,12 +217,21 @@
 </application>
 
 <application id="mednafen-wswan" appdata="mednafen">
-  <title lang="en_US">mednafen-wswan</title>
-  <description lang="en_US">Mednafen WonderSwan Launcher</description>
   <exec command="mednafen-wswan.sh"/>
-  <icon src="icon_mednafen.png"/>
+  <version major="0" minor="9" release="17" build="0"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net/"/>
-  <version major="0" minor="9" release="17.1-wip" build="0"/>
+  <titles>
+      <title lang="en_US">mednafen-wswan</title>
+  </titles>
+  <title lang="en_US">mednafen-wswan</title>
+  <descriptions>
+      <description lang="en_US">Mednafen WonderSwan Launcher</description>
+  </descriptions>
+  <description lang="en_US">Mednafen WonderSwan Launcher</description>
+  <icon src="icon_mednafen.png"/>
+  <licenses>
+      <license name="GPLv2+" url="http://www.gnu.org/licenses/gpl-2.0.html" sourcecodeurl="git://github.com/pder/mednafen-pandora.git"/>
+  </licenses>
   <categories>
     <category name="Game">
     <subcategory name="Emulator"/>
