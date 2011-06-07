@@ -6,8 +6,8 @@ index 3df0d6d..40d029a 100644
  	video/text.cpp video/video.cpp video/tblur.cpp \
  	video/selblur.cpp video/resize.cpp
  mednafen_LDADD = trio/libtrio.a drivers/libmdfnsdl.a \
--	sexyal/libsexyal.a -L/home/pder/pandora-dev/arm-2010.09/usr/lib -Wl,-rpath,/home/pder/pandora-dev/arm-2010.09/usr/lib -lSDL -lpthread demo/libdemo.a $(am__append_3) \
-+	sexyal/libsexyal.a -L/home/pder/pandora-dev/arm-2010.09/usr/lib -Wl,-rpath,/home/pder/pandora-dev/arm-2010.09/usr/lib -lpthread demo/libdemo.a $(am__append_3) \
+-	sexyal/libsexyal.a -L/home/pder/pandora-dev/arm-2011.03/usr/lib -Wl,-rpath,/home/pder/pandora-dev/arm-2011.03/usr/lib -lSDL -lpthread demo/libdemo.a $(am__append_3) \
++	sexyal/libsexyal.a -L/home/pder/pandora-dev/arm-2011.03/usr/lib -Wl,-rpath,/home/pder/pandora-dev/arm-2011.03/usr/lib -lpthread demo/libdemo.a $(am__append_3) \
  	$(am__append_6) $(am__append_9) $(am__append_12) \
  	$(am__append_15) $(am__append_18) $(am__append_21) \
  	$(am__append_24) $(am__append_27) $(am__append_30) \

@@ -21,7 +21,7 @@ rm -rf src/hw_cpu-native && \
 cp -r src/hw_cpu src/hw_cpu-native && \
 make distclean
 
-PNDSDK=$HOME/pandora-dev/arm-2010.09
+PNDSDK=$HOME/pandora-dev/arm-2011.03
 TARGET_SYS=arm-none-linux-gnueabi
 CROSSTOOL="$PNDSDK/bin/$TARGET_SYS"
 
