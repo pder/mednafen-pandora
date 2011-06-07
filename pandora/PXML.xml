@@ -4,6 +4,9 @@
   <titles>
     <title lang="en_US">Mednafen %PR%</title>
   </titles>
+  <descriptions>
+    <description lang="en_US">Mednafen %PR%</description>
+  </descriptions>
   <version major="0" minor="9" release="17" build="%PR%"/>
   <author name="mednafen team" website="http://mednafen.sourceforge.net"/>
 </package>
