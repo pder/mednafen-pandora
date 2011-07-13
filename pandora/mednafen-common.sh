@@ -9,6 +9,10 @@ if [ ! -d .mednafen ] ; then
     cp -r mednafen-default .mednafen
 fi
 
+if [ ! -e .mednafen/mednafen-09x.cfg ] ; then
+    cp mednafen-default/mednafen-09x.cfg .mednafen/
+fi
+
 function select_rom()
 {
     here=`pwd`
